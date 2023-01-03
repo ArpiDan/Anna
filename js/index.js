@@ -110,14 +110,14 @@ function startCountdown() {
             stopCountdown();
             show("gameover");
             if ( uncor >= 10  ) {
-                document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Աննա, այս անգամ դու պարտվեցիր։Կրկնիր բազմապատկման աղյուսակը։</p><p>Միավորների թիվը՝ " + score ;
+                document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Ռուբեն, այս անգամ դու պարտվեցիր։Կրկնիր բազմապատկման աղյուսակը։</p><p>Միավորների թիվը՝ " + score ;
                 hide("score");
                 audioStart.pause();
                 audioLose.currentTime = 0;
                 audioLose.play();
             } 
             else if(timeRemaining === 0 ){
-                document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Աննա, դու հավաքեցիր "+score+" միավոր, շարունակիր սովորել բազմապատկման աղյուսակը, որպեսզի հավաքես 50 միավոր և հաղթես։</p>" ;
+                document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Ռուբեն, դու հավաքեցիր "+score+" միավոր, շարունակիր սովորել բազմապատկման աղյուսակը, որպեսզի հավաքես 50 միավոր և հաղթես։</p>" ;
                 hide("score");
                 audioStart.pause();
                 audioLose.currentTime = 0;
@@ -127,7 +127,7 @@ function startCountdown() {
                     audioStart.pause();
                     audioWin.currentTime = 0;
                     audioWin.play();
-                    document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Աննա, շնորհավորում եմ, դու հաղթեցիր:</p><p>Միավորների թիվը՝ " + score + "</p>";
+                    document.getElementById("gameover").innerHTML = "<p>Սիրելի՛ Ռուբեն, շնորհավորում եմ, դու հաղթեցիր:</p><p>Միավորների թիվը՝ " + score + "</p>";
                 hide("uncor");  
                 
                 } 
